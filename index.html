@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/Mobile.js"></script>
+</head>
+<body>
+<script>
+    let samsung = new Mobile('samsung');
+    let iphone = new Mobile('iphone');
+    samsung.turnOn();
+    samsung.writeMessage('chao ban');
+    samsung.sendMessage(iphone);
+    iphone.turnOn();
+    console.log(iphone.getInBox());
+</script>
+</body>
+</html>
